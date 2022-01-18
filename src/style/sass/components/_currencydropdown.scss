@@ -1,80 +1,73 @@
 .big-container {
   display: flex;
   margin-top: 1rem;
-  // justify-content: center;
   flex-direction: column;
   width: 100%;
   height: 150vh;
-}
-.chart {
-  margin-left: 8rem;
-  margin-bottom: 2rem;
-}
-.container {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  .dropdown-container {
-    width: 12rem;
-    padding: 1rem;
-
-    .dropdown1,
-    .dropdown2,
-    .dropdown3,
-    .dropdown4,
-    .dropdown5 {
+  .chart {
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    .dropdown-container {
+      width: 12rem;
       padding: 1rem;
-      border: 1px solid #ededed;
-      cursor: pointer;
-    }
 
-    .droplist1,
-    .droplist2,
-    .droplist3,
-    .droplist4,
-    .droplist5 {
-      max-height: 19rem;
-      overflow-y: auto;
-      width: 100%;
-      .list-item {
-        padding: 1rem 1rem;
-        border-left: 1px solid #ededed;
-        border-bottom: 1px solid #ededed;
-        &:hover {
-          background-color: #d8c3a5;
-          cursor: pointer;
-        }
-      }
-      .selected-yet {
-        pointer-events: none;
-        background-color: #d8c3a5;
+      .dropdown1,
+      .dropdown2,
+      .dropdown3,
+      .dropdown4,
+      .dropdown5 {
+        padding: 1rem;
+        border: 1px solid #ededed;
         cursor: pointer;
       }
 
-      &::-webkit-scrollbar {
-        width: 0.5rem;
+      .droplist1,
+      .droplist2,
+      .droplist3,
+      .droplist4,
+      .droplist5 {
+        max-height: 19rem;
+        overflow-y: auto;
+        width: 100%;
+        .list-item {
+          padding: 1rem 1rem;
+          border-left: 1px solid #ededed;
+          border-bottom: 1px solid #ededed;
+          &:hover {
+            background-color: #d8c3a5;
+            cursor: pointer;
+          }
+        }
+        .selected-yet {
+          pointer-events: none;
+          background-color: #d8c3a5;
+          cursor: pointer;
+        }
+
+        &::-webkit-scrollbar {
+          width: 0.5rem;
+        }
+        &::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 1px grey;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: #ededed;
+        }
       }
-      &::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 1px grey;
-        // border: 1px solid grey;
-      }
-      &::-webkit-scrollbar-thumb {
-        background: #ededed;
-        // border-radius: 10px;
+      .input {
+        margin-bottom: 1rem;
+        padding: 1rem 0.4rem;
+        border: 2px solid #ededed;
       }
     }
-    .input1,
-    .input2,
-    .input3,
-    .input4,
-    .input5 {
-      margin-bottom: 1rem;
-      padding: 1rem 0.4rem;
-      border: 1px solid #ededed;
+    .convert-btn {
+      height: 2rem;
+      margin-top: 4rem;
     }
-  }
-  .convert-btn {
-    height: 2rem;
-    margin-top: 4rem;
   }
 }
